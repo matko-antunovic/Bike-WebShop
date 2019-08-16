@@ -1,0 +1,49 @@
+.Hero{
+    height: calc(100vh - 95px);
+    background: url('../../../Assets/Images/Landing/LandingHero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-left: 6rem;
+    
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0, 1fr));
+    grid-template-rows: repeat(12,minmax(0, 1fr));
+  
+        &__text{
+            grid-column: 1/6;
+            grid-row: 3/span 5;
+            
+
+
+            &--title{
+                font-size: 8rem;
+                font-weight: 900;
+            }
+            &--subtitle{
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+
+    .CTA{
+        grid-row: 12/-1;
+        grid-column: 1/span 2;
+        font-size: 1.5rem;
+        cursor: pointer;
+        align-self: center;
+        font-weight: 700;
+       
+        .bottom{
+            color: rgb(228, 5, 5);
+        }
+        &:hover{
+           
+            background-color: rgba(#fff,.2);
+        }
+    }    
+
+
+    }
