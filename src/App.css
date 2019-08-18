@@ -1,4 +1,8 @@
 .App{
     height: 100%;
     overflow: hidden;
+} 
+
+.margin-wrapper{
+    margin-top: 9.5rem;
 }

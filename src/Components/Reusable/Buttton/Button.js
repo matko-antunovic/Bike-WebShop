@@ -1,8 +1,13 @@
 import React from 'react'
 import "./Button.scss";
-const Button = ({text,width,height,bck,margin,weight,size,color,padding}) => {
+import {withRouter} from "react-router-dom"
+
+
+const Button = ({text,width,height,bck,margin,weight,size,color,padding,history}) => {
     return (
-        <div className="button" style={{width:`${width}`, 
+        <div className="button"
+        onClick={()=>{history.push("/story")}}
+        style={{width:`${width}`, 
         height:`${height}`, backgroundColor:`${bck}`, 
         margin:`${margin}`, fontWeight:`${weight}`,fontSize:`${size}`,color:`${color}`,padding:`${padding}`
         }}>
@@ -11,4 +16,4 @@ const Button = ({text,width,height,bck,margin,weight,size,color,padding}) => {
     )
 }
 
-export default Button
+export default withRouter(Button)

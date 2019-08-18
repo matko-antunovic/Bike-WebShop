@@ -2,6 +2,7 @@ import React from 'react'
 import "./HomeIntro.scss"
 import Button from "../../Reusable/Buttton/Button"
 
+
 const HomeIntro = () => {
     return (
         <div className="intro-container">
@@ -15,4 +16,4 @@ const HomeIntro = () => {
     )
 }
 
-export default HomeIntro
+export default HomeIntro;
