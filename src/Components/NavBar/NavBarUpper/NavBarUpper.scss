@@ -8,11 +8,12 @@
     width: 100%;
     display: flex;
     align-items: center;
+    
   }
 
   &-shipping{
     animation: pulse 2.5s infinite;
-  
+    cursor: pointer;
   
   @keyframes pulse {
     0% {
@@ -40,12 +41,15 @@
   }
 
   &-location {
+    
     &__icon {
       width: 15rem;
+      cursor: pointer;
     }
 
     &__txt {
       margin-left: 1rem;
+      cursor: pointer;
     }
   }
 
@@ -54,6 +58,7 @@
     justify-content: center;
     margin: 0 0.5rem;
     width: 10rem;
+    cursor: pointer;
     &--flag {
       background: url("../../../Assets/Icons&Logos/FullNav/AmericanFlagIcon.svg");
       width: 3rem;
@@ -62,11 +67,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       margin-right: 0.5rem;
+      cursor: pointer;
     }
   }
 
   &-signIn {
     width: 10rem;
     text-align: center;
+    cursor: pointer;
   }
 }

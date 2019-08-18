@@ -92,7 +92,7 @@
             display: flex;
             justify-content: space-around;
             padding: 1rem 0;
-
+            margin-top: 1rem;
 
             .sizeup{
                 cursor: pointer;
@@ -107,6 +107,7 @@
 
             .logo {
                 
+               
 
                 &-I {
                     background: center / contain no-repeat url("../../Assets//Icons&Logos/Footer/InstagramIcon.svg");

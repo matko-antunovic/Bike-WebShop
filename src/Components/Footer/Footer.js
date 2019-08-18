@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="right-side">
-        <Button size="1.6rem" bck="#d32e2e" padding="1.5rem 3.3rem" text="FIND A RETAILER" color="#fff"/>
+        <Button size="1.6rem" bck="#d32e2e" width="20rem" url="/retailer" padding="2rem" text="FIND A RETAILER" color="#fff"/>
         <div  className="logos">
         <div className="logo-I sizeup"></div>
         <div className="logo-T sizeup"></div>

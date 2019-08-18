@@ -1,24 +1,26 @@
 import React from 'react';
 import "./NavBarBottom.scss"
+import {withRouter} from "react-router-dom"
 
-const NavBarBottom = () => {
+const NavBarBottom = ({history}) => {
+   
     return (
         <div className="NavBarB-container">
 
             <div className="NavBarB-main">
-            <div className="NavBarB-logo"> </div>
+            <div onClick={()=>{history.push("")}} className="NavBarB-logo"> </div>
 
             <div className="NavBarB-links">
                 <div className="NavBarB-links__bikes  NavSize">Bikes</div>
                 <div className="NavBarB-links__trail NavSize">Trail</div>
                 <div className="NavBarB-links__downhill NavSize">Downhill</div>
                 <div className="NavBarB-links__works NavSize">S-works</div>
-                <div className="NavBarB-links__inside NavSize">Inside specialized</div>
+                <div onClick={()=>{history.push("/story")}} className="NavBarB-links__inside NavSize">Inside specialized</div>
             </div>
 
             <div className="NavBarB-icons">
                 <div className="search-icon"></div>
-                <div className="cart-icon"></div>
+                <div onClick={()=>{history.push("cart")}} className="cart-icon"></div>
             </div>
 
 
@@ -27,4 +29,4 @@ const NavBarBottom = () => {
     )
 }
 
-export default NavBarBottom
+export default withRouter(NavBarBottom);

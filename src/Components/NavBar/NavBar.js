@@ -4,6 +4,7 @@ import NavBarBottom from "./NavBarBottom/NavBarBottom";
 import "./NavBar.scss"
 
 class NavBar extends Component {
+
     render() {
         return (
             <div className="Nav">

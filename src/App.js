@@ -4,6 +4,7 @@ import Landing from "./Pages/Landing/Landing";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer"
 import Story from "./Pages/OurStory/Story";
+import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart"
 import {Route} from "react-router-dom";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <div className="margin-wrapper">
       <Route exact path="/" component={Landing}/>
       <Route exact path="/story" component={Story}/>
+      <Route exact path="/cart" component={ShoppingCart}/>
+      
       <Footer/>
       </div>
 
