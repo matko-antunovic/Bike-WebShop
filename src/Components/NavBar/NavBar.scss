@@ -1,6 +1,8 @@
 .Nav{
-    position: sticky;
+    position: fixed;
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-bottom: 0.1rem solid black;
+    z-index: 111;
 }

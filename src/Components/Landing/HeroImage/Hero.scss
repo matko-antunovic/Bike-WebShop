@@ -35,12 +35,13 @@
         cursor: pointer;
         align-self: center;
         font-weight: 700;
+        width: 26rem;
+        padding: 1rem;
        
         .bottom{
-            color: rgb(228, 5, 5);
+            color: #d32e2e;
         }
         &:hover{
-           
             background-color: rgba(#fff,.2);
         }
     }    

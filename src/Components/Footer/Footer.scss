@@ -1,0 +1,140 @@
+.Footer {
+    height: 25vh;
+    width: 100%;
+    background-color: #141414;
+    color: #fff;
+
+    display: flex;
+    padding: 6rem;
+    justify-content: space-between;
+
+    &-Form {
+        display: flex;
+
+        margin-bottom: 2rem;
+
+        &__Input {
+            background-color: #4e4e4e;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 1.2rem;
+            font-size: 1.4rem;
+        }
+
+        &__Submit {
+            background-color: #d32e2e;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(.86);
+            }
+        }
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        max-width: 27rem;
+        font-size: 1.3rem;
+
+
+        span {
+            margin-top: 1rem;
+            font-weight: bold;
+
+            &:hover {
+                filter: brightness(.8);
+                cursor: pointer;
+                color: #d32e2e;
+            }
+        }
+    }
+
+    .middle {
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        
+
+        span {
+            margin: 0 1rem;
+
+            &:hover{
+                color: #d32e2e;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+
+
+    .right-side {
+
+        padding-right: 3.5rem;
+        display: flex;
+        flex-direction: column;
+
+        .logos {
+
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0;
+
+
+            .sizeup{
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+            
+
+            .logo {
+                
+
+                &-I {
+                    background: center / contain no-repeat url("../../Assets//Icons&Logos/Footer/InstagramIcon.svg");
+                    height: 2rem;
+                    width: 2rem;
+                }
+
+                &-T {
+                    background: center / contain no-repeat url("../../Assets//Icons&Logos/Footer/TwitterIcon.svg");
+                    height: 2rem;
+                    width: 2rem;
+                }
+
+                &-f {
+                    background: center / contain no-repeat url("../../Assets//Icons&Logos/Footer/FacebookIcon.svg");
+                    height: 2rem;
+                    width: 2rem;
+                }
+
+                &-y {
+                    background: center / contain no-repeat url("../../Assets//Icons&Logos/Footer/YoutubeIcon.svg");
+                    height: 2rem;
+                    width: 2rem;
+                }
+
+               
+            }
+        }
+    }
+
+}

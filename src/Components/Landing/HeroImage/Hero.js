@@ -13,7 +13,7 @@ const Hero = () => {
         <p className="Hero__text--subtitle">
           ITS ALL FUN AND GAMES UNTIL YOU CATCH TOO MUCH AIR
         </p>{" "}
-        <Button text="DEMO 8-FR" height="4rem" width="15rem" bck="#4e4e4e" margin="3rem 0" weight="700" size="1.3rem"/>
+        <Button text="DEMO 8-FR" height="4rem" width="15rem" bck="#4e4e4e" margin="3rem 0" weight="700" size="1.4rem" padding="2rem" />
       </div>
 
       <div className="CTA">

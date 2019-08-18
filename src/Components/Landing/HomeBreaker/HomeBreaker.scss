@@ -1,0 +1,38 @@
+.HomeBreaker{
+    background: center / cover no-repeat url("../../../Assets/Images/Landing/LandingBigImage.jpg") ;
+    box-sizing: border-box;
+    height: 65vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+
+    .titles{
+        margin-left: 6.5rem;
+        
+
+        .main-title{
+            margin-top: 3rem;
+            font-size: 15rem;
+            font-weight: 900;
+            line-height: 13rem;
+
+          &__1{
+            &::first-letter{
+                color:#d32e2e;
+            }
+          }  
+         
+        }
+        
+        .sub-title{
+            position: absolute;
+            font-size: 1.7rem;
+            top:80%;
+
+            p:last-child{
+                font-weight: 700;
+            }
+        }
+
+    }
+}

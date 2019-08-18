@@ -1,0 +1,22 @@
+.home-video{
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 12rem 6rem;
+
+    &__title{
+        margin-bottom: 2rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .video-wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
