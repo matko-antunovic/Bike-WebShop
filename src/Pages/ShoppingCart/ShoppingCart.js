@@ -8,7 +8,7 @@ const ShoppingCart = () => {
 
             <div className="cart-top">
             <h1 className="top-title">SHOPPING CART</h1>
-            <a className="top-link">Continue Shopping</a>
+            <p className="top-link">Continue Shopping</p>
             </div>
 
 
@@ -17,7 +17,7 @@ const ShoppingCart = () => {
             <p className="middle-txt">Nothin' to see here.</p>
             <p className="middle-txt mb">Check out your wishlist items.</p>
             <Button url="/" text="VIEW WISH LIST" width="20rem" size="1.4rem" color="#fff" padding="1.5rem .45rem" bck="black" />
-            <a className="middle-link">Continue Shopping</a>
+            <p className="middle-link">Continue Shopping</p>
             </div>
 
 

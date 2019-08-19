@@ -1,0 +1,54 @@
+.location{
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+
+    &-column{
+
+       
+
+        &__1{
+            margin-right: 10rem;
+            font-size: 2rem;
+            
+        }
+        &__2{
+            margin-right: 20rem;
+            font-size: 1.6rem;
+            line-height: 3rem;
+            width: 30rem;
+
+            .details{
+                &__title{
+                    margin-bottom: 2rem;
+                }
+
+                &__link{
+                    color: #e45454;
+                    text-decoration: underline;
+
+                    &:hover{
+                        cursor: pointer;
+                        filter: brightness(.7);
+                        
+                    }
+                }
+            }
+        }
+        &__3{
+            line-height: 2rem;
+            font-size: 1.3rem;
+
+            h2{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+   
+
+}
