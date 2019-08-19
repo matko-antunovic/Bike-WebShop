@@ -2,8 +2,9 @@ import React from 'react';
 import './NavBarUpper.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import {withRouter} from "react-router-dom"
 
-const NavBarUpper = () => {
+const NavBarUpper = ({history}) => {
   return (
     <div className="NavBar-container">
 
@@ -20,7 +21,7 @@ const NavBarUpper = () => {
               <span>EN</span>
           </div>
           <div className="NavBar-signIn">
-            <span>SIGN IN</span>
+            <span onClick={()=>{{history.push("/signin")}}}>SIGN IN</span>
           </div>
          
         </div>
@@ -29,4 +30,4 @@ const NavBarUpper = () => {
   );
 };
 
-export default NavBarUpper;
+export default withRouter(NavBarUpper);

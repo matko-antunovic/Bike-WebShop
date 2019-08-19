@@ -16,7 +16,7 @@ const ShoppingCart = () => {
             <h1 className="middle-title">Your Shopping Cart is Empty</h1>
             <p className="middle-txt">Nothin' to see here.</p>
             <p className="middle-txt mb">Check out your wishlist items.</p>
-            <Button url="/" text="VIEW WISH LIST" width="25rem" size="1.4rem" color="#fff" padding="2rem .7rem" bck="black" />
+            <Button url="/" text="VIEW WISH LIST" width="20rem" size="1.4rem" color="#fff" padding="1.5rem .45rem" bck="black" />
             <a className="middle-link">Continue Shopping</a>
             </div>
 
