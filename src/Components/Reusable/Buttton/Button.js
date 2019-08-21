@@ -4,7 +4,6 @@ import {withRouter} from "react-router-dom"
 
 
 const Button = ({text,width,height,bck,margin,weight,size,color,padding,history,url}) => {
-    console.log(url)
     return (
         <div className="button"
         onClick={()=>{history.push(`${url}`)}}

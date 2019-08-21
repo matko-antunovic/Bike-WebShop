@@ -1,0 +1,34 @@
+
+        .trail-menu {
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+
+                .models{
+                   
+                }
+                .hide{
+                    display: none;
+                }
+                .show{
+                }
+
+                .trail{
+                    &-title{
+             
+                    }
+                }
+
+
+                .list-menu-bikes{
+                    .trail-list{
+                        display: flex;
+                        flex-direction: column;
+                        color: navy;
+              }
+                }
+            }
+        } 
+
+        

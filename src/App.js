@@ -7,6 +7,7 @@ import Story from "./Pages/OurStory/Story";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart"
 import SignIn from "./Pages/SignIn/SignIn"
 import Retailer from "./Pages/Retailer/Retailer"
+import Bikes from "./Pages/Bikes/Bikes"
 import {Route} from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/cart" component={ShoppingCart}/>
       <Route exact path="/signin" component={SignIn}/>
       <Route exact path="/retailer" component={Retailer}/>
+      <Route exact path="/bikes" component={Bikes}/>
       <Footer/>
       </div>
 

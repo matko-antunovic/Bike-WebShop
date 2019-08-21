@@ -5,11 +5,6 @@ import Button from "../../Reusable/Buttton/Button"
 class SearchRetailer extends Component {
 
     render() {
-
-        const handleSubmit = (event) => {
-            event.preventDefault()
-        }
-
         return (
             <div className='search-retailer'>
 

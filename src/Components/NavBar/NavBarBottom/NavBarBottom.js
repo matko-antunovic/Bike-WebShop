@@ -11,7 +11,7 @@ const NavBarBottom = ({history}) => {
             <div onClick={()=>{history.push("")}} className="NavBarB-logo"> </div>
 
             <div className="NavBarB-links">
-                <div className="NavBarB-links__bikes  NavSize">Bikes</div>
+                <div  onClick={()=>{history.push("/bikes")}} className="NavBarB-links__bikes  NavSize">Bikes</div>
                 <div className="NavBarB-links__trail NavSize">Trail</div>
                 <div className="NavBarB-links__downhill NavSize">Downhill</div>
                 <div className="NavBarB-links__works NavSize">S-works</div>

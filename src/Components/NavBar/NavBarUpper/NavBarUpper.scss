@@ -13,7 +13,6 @@
 
   &-shipping{
     animation: pulse 2.5s infinite;
-    cursor: pointer;
   
   @keyframes pulse {
     0% {
@@ -50,6 +49,10 @@
     &__txt {
       margin-left: 1rem;
       cursor: pointer;
+
+      &:hover{
+        color: #e45454;
+      }
     }
   }
 
