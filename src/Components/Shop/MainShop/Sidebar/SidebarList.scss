@@ -1,34 +1,49 @@
+.trail-menu {
 
-        .trail-menu {
+    &-container {
+        display: flex;
+        flex-direction: column;
 
-            &-container {
+        .models {}
+
+        .hide {
+            display: none;
+        }
+
+        .show {}
+
+        .trail {
+            &-title {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 1.8rem;
+                width: 15rem;
+                cursor: pointer;
+                margin-bottom: .5rem;
+                font-weight: 500;
+            }
+
+            &-sign {
+                margin: 1rem;
+            }
+        }
+
+
+        .list-menu-bikes {
+            .trail-list {
+                width: 100%;
+                list-style-type: none;
                 display: flex;
                 flex-direction: column;
 
-                .models{
-                   
-                }
-                .hide{
-                    display: none;
-                }
-                .show{
-                }
-
-                .trail{
-                    &-title{
-             
-                    }
-                }
-
-
-                .list-menu-bikes{
-                    .trail-list{
-                        display: flex;
-                        flex-direction: column;
-                        color: navy;
-              }
+                &-model {
+                    margin:1rem;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    font-weight: 400;
                 }
             }
-        } 
-
-        
+        }
+    }
+}

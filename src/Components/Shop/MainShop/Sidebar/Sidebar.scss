@@ -1,18 +1,19 @@
 .sidebar {
 
     &-container {
-        &__title {}
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        &__subtitle {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
     }
 
     &-menu {
-
-
+        width: 22rem;
     }
 
-
-
-    // .A {
-    //     display: flex;
-    //     cursor: pointer;
-    // }
 }

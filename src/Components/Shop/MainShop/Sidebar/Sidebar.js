@@ -14,7 +14,7 @@ class Sidebar extends Component {
   };
 
   handleChange = id => {
-    const title=this.state.data.filter(i=>i.id === id)[0].title
+    const title=this.state.data.filter(i=>i.id === id)[0].title;
       this.setState({
       showItem:
         this.state.showItem === title ? null : title
@@ -27,7 +27,7 @@ class Sidebar extends Component {
         <div className="sidebar-container">
           <h2 className="sidebar-container__title">SHORT CUTS</h2>
           <div className="sidebar-container">
-            <h2 className="sidebar-container__title">CATEGORY</h2>
+            <h2 className="sidebar-container__subtitle">CATEGORY</h2>
             <div className="sidebar-menu">
               <SidebarList
                 list={this.state.data}
