@@ -1,3 +1,23 @@
+
+import demo1 from "../Images/ProductItem/StumpJumperExpert27/StumpJumperExpert27.5-1.jpg"
+import demo2 from "../Images/ProductItem/Demo8/Demo8-2.jpg"
+import demo3 from "../Images/ProductItem/Demo8/Demo8-3.jpg"
+
+import stunt2 from "../Images/ProductItem/Demo8/Demo8-4.jpg"
+import stunt3 from "../Images/ProductItem/Demo8/Demo8-5.jpg"
+import stunt1 from "../Images/ProductItem/SW-StumpJumper29/SWStumpJumper29-1.jpg"
+
+import evo1 from "../Images/ProductItem/EpicEVO/EpicEvo-1.jpg"
+import evo2 from "../Images/ProductItem/EpicEVO/SWEpicEvo-2.jpg"
+import evo3 from "../Images/ProductItem/EpicEVO/SWEpicEvo-3.jpg"
+
+import stump1 from "../Images/ProductItem/StumpJumperExpert27/StumpJumperExpert27.5-1.jpg"
+import stump2 from "../Images/ProductItem/StumpJumperExpert27/StumpJumperExpert27.5-2.jpg"
+import stump3 from "../Images/ProductItem/StumpJumperExpert27/StumpJumperExpert27.5-3.jpg"
+
+
+import evo5 from "../Images/ProductItem/EpicEVO/SWEpicEvo-6.jpg"
+
 const SWORKS_DATA = 
     {
        id: 4,
@@ -10,9 +30,7 @@ const SWORKS_DATA =
                name: 'S-Works Demo 8',
                price: '10,400.00',
                partNumber: 'No.94159-0009',
-               imageUrl: '',
-               primaryColor: '#',
-               secondaryColor: '#',
+               imageUrl: [demo1,demo2,demo3]
 
            },
             {
@@ -20,19 +38,15 @@ const SWORKS_DATA =
                name: 'S-Works Epic EVO',
                price: '9,500.00',
                partNumber: 'No.94159-0010',
-               imageUrl: '',
-               primaryColor: '#',
-               secondaryColor: '#',
-
+               imageUrl:[evo1,evo2,evo3]
+                
            },
             {
                id: 3,
                name: 'S-Works StumpJumper 29',
                price: '9,520.00',
                partNumber: 'No.94159-0011',
-               imageUrl: '',
-               primaryColor: '#',
-               secondaryColor: '#',
+              imageUrl: [stunt1,stunt2,stunt3]
 
            },
             {
@@ -40,9 +54,7 @@ const SWORKS_DATA =
                name: 'S-Works StumpJumper 27.5',
                price: '9,520.00',
                partNumber: 'No.94159-0012',
-               imageUrl: '',
-               primaryColor: '#',
-               secondaryColor: '#',
+               imageUrl:[stump1,stump2,stump3]
 
            },
             {
@@ -50,10 +62,7 @@ const SWORKS_DATA =
                name: 'S-Works Demo 8 Frame',
                price: '4,000.00',
                partNumber: 'No.94159-0013',
-               imageUrl: '',
-               primaryColor: '#',
-               secondaryColor: '#',
-
+               imageUrl: [evo5]
            },
        ]
    }

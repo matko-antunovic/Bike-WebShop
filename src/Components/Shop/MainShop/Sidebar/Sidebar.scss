@@ -1,6 +1,7 @@
 .sidebar {
-
+    margin-right: 2rem;
     &-container {
+       
         &__title {
             font-size: 2rem;
             margin-bottom: 3rem;
@@ -13,7 +14,13 @@
     }
 
     &-menu {
+        margin-top: 3.3rem;
         width: 22rem;
+
+         &-text{
+             margin-top: 2rem;
+             font-size:1.1rem;
+         }
     }
 
 }

@@ -21,7 +21,8 @@ class Sidebar extends Component {
     });
   };
 
-  render() {
+  render()
+  {
     return (
       <div className="sidebar">
         <div className="sidebar-container">
@@ -34,6 +35,10 @@ class Sidebar extends Component {
                 hidden={this.state.showItem}
                 handleChange={this.handleChange}
               />
+              <p className="sidebar-menu-text">Bikes manufactured and sold by
+             Specialized are guaranteed for quality and performance. 
+            We stand by our bikes and aim to produce the highest quality
+             products. Our bikes are made for riders, by riders.</p>
             </div>
           </div>
         </div>

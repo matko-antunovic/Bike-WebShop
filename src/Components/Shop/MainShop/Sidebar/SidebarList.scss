@@ -1,8 +1,9 @@
 .trail-menu {
-
+ 
     &-container {
         display: flex;
         flex-direction: column;
+        
 
         .models {}
 
@@ -42,6 +43,11 @@
                     font-size: 1.4rem;
                     cursor: pointer;
                     font-weight: 400;
+
+                    &:hover{
+                        font-weight: 500;
+                        color: #e45454;
+                    }
                 }
             }
         }
