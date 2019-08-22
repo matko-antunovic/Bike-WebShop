@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './Products.scss';
-import Section from '../../../Section/Section';
+import Section from "../../../Reusable/Section/Section"
 import {connect} from 'react-redux';
-import {getBikes} from '../../../../Redux/bikes/bikesActions';
 
 class Products extends Component {
   render () {
@@ -24,10 +23,6 @@ const mapStateToProps = state => ({
   data: state.bikes.data,
 });
 
-const mapDispatchToProps = dispatch => ({
-  getBikes: () => {
-    dispatch (getBikes ());
-  },
-});
 
-export default connect (mapStateToProps, mapDispatchToProps) (Products);
+
+export default connect (mapStateToProps, null) (Products);

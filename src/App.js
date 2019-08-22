@@ -9,6 +9,7 @@ import SignIn from "./Pages/SignIn/SignIn"
 import Retailer from "./Pages/Retailer/Retailer"
 import Bikes from "./Pages/Bikes/Bikes"
 import Bike from "./Pages/Bike/Bike"
+import RenderPage from "./Pages/RenderPage/RenderPage"
 import {Route} from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route exact path="/retailer" component={Retailer}/>
       <Route exact path="/bikes" component={Bikes}/>
       <Route exact path="/bikes/:name" component={Bike}/>
+      <Route exact path="/section/:page" component={RenderPage}/>
       <Footer/>
       </div>
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Section.scss";
 
-import Card from '../Reusable/Card/Card';
+import Card from "../Card/Card"
 
 const Section = ({info}) => {
-    // console.log("U SECTIONU" ,info.items)
+  
     return (
         <div className="section">
             <div className="section-container">
