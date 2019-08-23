@@ -14,7 +14,9 @@ import {Route} from "react-router-dom";
 
 function App() {
   return (
+    
     <div className="App">
+    
       <NavBar/>
 
       <div className="margin-wrapper">
@@ -31,8 +33,9 @@ function App() {
       <Route exact path="/section/:page" component={RenderPage}/>
       <Footer/>
       </div>
-
+      
     </div>
+    
   );
 }
 

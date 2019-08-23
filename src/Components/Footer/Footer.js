@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from "../Reusable/Buttton/Button"
 import "./Footer.scss";
+import {withRouter} from "react-router-dom"
 
-const Footer = () => {
+const Footer = ({history}) => {
     return (
         <div className="Footer">
 
@@ -32,7 +33,9 @@ const Footer = () => {
         </div>
 
         <div className="right-side">
+        <span onClick={()=>{history.push("/retailer")}}>
         <Button size="1.6rem" bck="#d32e2e" width="20rem" url="/retailer" padding="1.5rem" text="FIND A RETAILER" color="#fff"/>
+        </span>
         <div  className="logos">
         <div className="logo-I sizeup"></div>
         <div className="logo-T sizeup"></div>
@@ -44,4 +47,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default withRouter(Footer);

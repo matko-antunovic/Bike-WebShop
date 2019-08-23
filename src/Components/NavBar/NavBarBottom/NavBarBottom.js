@@ -1,8 +1,9 @@
 import React from 'react';
 import "./NavBarBottom.scss"
 import {withRouter} from "react-router-dom"
+import {connect} from "react-redux"
 
-const NavBarBottom = ({history}) => {
+const NavBarBottom = ({history,items}) => {
    
     return (
         <div className="NavBarB-container">
@@ -19,8 +20,10 @@ const NavBarBottom = ({history}) => {
             </div>
 
             <div className="NavBarB-icons">
-                <div className="search-icon"></div>
-                <div onClick={()=>{history.push("/cart")}} className="cart-icon"></div>
+                {/* <div className="search-icon"></div> */}
+                <div onClick={()=>{history.push("/cart")}} className="cart-icon">
+                </div>
+                {items.length>0 ? <span onClick={()=>{history.push("/cart")}}>{items.length}</span> : null}
             </div>
 
 
@@ -29,4 +32,8 @@ const NavBarBottom = ({history}) => {
     )
 }
 
-export default withRouter(NavBarBottom);
+const mapStateToProps=state=>({
+    items:state.bikes.cart
+})
+
+export default connect(mapStateToProps,null)(withRouter(NavBarBottom));

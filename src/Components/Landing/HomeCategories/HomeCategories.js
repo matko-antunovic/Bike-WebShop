@@ -20,8 +20,8 @@ const HomeCategories = ({match,history}) => {
           <span className="categories-text">downhill</span>
         </div>
 
-        <div className="wrapper filter">
-        <div onClick={()=>{history.push("/section/s-works")}}  className="s-works"></div>
+        <div className="wrapper ">
+        <div onClick={()=>{history.push("/section/s-works")}}  className="s-works filter"></div>
           <span className="categories-text">s-works</span>
         </div>
 

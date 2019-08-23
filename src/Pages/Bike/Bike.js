@@ -3,7 +3,8 @@ import "./Bike.scss";
 import Button from "../../Components/Reusable/Buttton/Button"
 import Carousel from "../../Components/Carousel/Carousel";
 import { connect } from "react-redux";
-import { getBike } from "../../Redux/bikes/bikesActions";
+import { getBike,addBikeToCart } from "../../Redux/bikes/bikesActions";
+
 
 class Bike extends Component {
   componentDidMount() {
@@ -12,7 +13,6 @@ class Bike extends Component {
 
   render() {
     const { bike } = this.props;
-
     return (
       <div className="bike">
         {bike ? <Carousel images={bike.imageUrl} /> : null}
@@ -21,8 +21,10 @@ class Bike extends Component {
         <div className="bike-details-info">
 
         <div className="buttons">
-        <Button text="ADD TO CART" color="#fff" bck="#d32e2e" width="15rem" size="1.7rem" padding="1.3rem" margin=".5rem" />
-        <Button text="FIND NEARBY" color="black" bck="transparent" border="1px solid" width="15rem" size="1.7rem" margin=".5rem" padding="1.3rem" />
+          <span onClick={()=>this.props.addBikeToCart()}>
+          <Button text="ADD TO CART" color="#fff" bck="#d32e2e" width="15rem" size="1.7rem" padding="1.3rem" margin=".5rem" /> </span>
+          <span onClick={()=>{this.props.history.push("/retailer")}}>
+        <Button  text="FIND NEARBY" color="black" bck="transparent" border="1px solid" width="15rem" size="1.7rem" margin=".5rem" padding="1.3rem" /></span>
         </div>
 
         <div className="main">
@@ -54,6 +56,12 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getBike: name => {
     dispatch(getBike(name));
+  },
+  // addBikeToCart:nameToAdd=>{
+  //   dispatch(addBikeToCart(nameToAdd))
+  // }
+  addBikeToCart:()=>{
+    dispatch(addBikeToCart())
   }
 });
 

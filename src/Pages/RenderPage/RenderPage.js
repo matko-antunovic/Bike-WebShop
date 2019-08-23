@@ -7,8 +7,10 @@ class Trail extends Component {
     render() {
 
     const toRender=this.props.match.params.page ?  this.props.data.filter(el=>el.title.toLowerCase()===this.props.match.params.page)[0] : false;
-        return (
+ 
+    return (
             <div className="trail">
+                <img className="image-hero" src={toRender.heroImage} alt="smh" /> 
                 {toRender ?
              <Section info={toRender} />
              : null  }

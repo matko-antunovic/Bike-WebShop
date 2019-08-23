@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Section.scss";
-
 import Card from "../Card/Card"
 
 const Section = ({info}) => {

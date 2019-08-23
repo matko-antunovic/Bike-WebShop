@@ -1,0 +1,40 @@
+.cart-items{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+
+    .item-container{
+
+        padding: .5rem;
+
+        .cart-item{
+            font-size: 1.8rem;
+            width: 65rem;
+            height: 20rem;
+            background-color: rgb(245, 245, 245);
+            padding: 1rem;
+
+            display: flex;
+
+            &__img{
+                width: 30rem;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            &__details{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                padding-left: 2rem;
+                font-weight: 500;
+            }
+        }
+
+    }
+}

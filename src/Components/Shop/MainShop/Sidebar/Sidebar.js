@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import "./Sidebar.scss";
-import { withRouter } from "react-router-dom";
-import TRAIL_DATA from "../../../../Assets/data/TrailData";
-import SWORKS_DATA from "../../../../Assets/data/SWorksData";
-import DOWNHILL_DATA from "../../../../Assets/data/DownHillData";
 import "./SidebarList";
 import SidebarList from "./SidebarList";
+import {connect} from "react-redux"
+import { withRouter } from "react-router-dom";
 
 class Sidebar extends Component {
+
   state = {
-    data: [TRAIL_DATA, SWORKS_DATA, DOWNHILL_DATA],
     showItem: 0
   };
 
+
   handleChange = id => {
-    const title=this.state.data.filter(i=>i.id === id)[0].title;
+    const title=this.props.data.filter(i=>i.id === id)[0].title;
       this.setState({
       showItem:
         this.state.showItem === title ? null : title
@@ -31,7 +30,7 @@ class Sidebar extends Component {
             <h2 className="sidebar-container__subtitle">CATEGORY</h2>
             <div className="sidebar-menu">
               <SidebarList
-                list={this.state.data}
+                list={this.props.data}
                 hidden={this.state.showItem}
                 handleChange={this.handleChange}
               />
@@ -46,4 +45,9 @@ class Sidebar extends Component {
     );
   }
 }
-export default withRouter(Sidebar);
+
+
+const mapStateToProps = state => ({
+  data: state.bikes.data,
+});
+export default connect(mapStateToProps, null)( withRouter(Sidebar));
