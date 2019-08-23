@@ -62,7 +62,7 @@ const SWORKS_DATA =
                name: 'S-Works Demo 8 Frame',
                price: '4,000.00',
                partNumber: 'No.94159-0013',
-               imageUrl: [evo5]
+               imageUrl: [evo5,evo3]
            },
        ]
    }

@@ -1,7 +1,8 @@
 import React from 'react';
 import './HomeCategories.scss';
+import {withRouter} from "react-router-dom"
 
-const HomeCategories = () => {
+const HomeCategories = ({match,history}) => {
   return (
     <div className="HomeCategories">
 
@@ -10,17 +11,17 @@ const HomeCategories = () => {
       <div className="categories">
 
       <div className="wrapper">
-        <div className="trail filter"> </div>
+        <div onClick={()=>{history.push("/section/trail")}} className="trail filter"> </div>
           <span className="categories-text">trail</span>
           </div>
 
         <div className="wrapper">
-        <div className="downhill filter"></div>
+        <div onClick={()=>{history.push("/section/downhill")}}  className="downhill filter"></div>
           <span className="categories-text">downhill</span>
         </div>
 
         <div className="wrapper filter">
-        <div className="s-works"></div>
+        <div onClick={()=>{history.push("/section/s-works")}}  className="s-works"></div>
           <span className="categories-text">s-works</span>
         </div>
 
@@ -29,4 +30,4 @@ const HomeCategories = () => {
   );
 };
 
-export default HomeCategories;
+export default withRouter(HomeCategories);

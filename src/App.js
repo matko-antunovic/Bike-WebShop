@@ -25,6 +25,9 @@ function App() {
       <Route exact path="/retailer" component={Retailer}/>
       <Route exact path="/bikes" component={Bikes}/>
       <Route exact path="/bikes/:name" component={Bike}/>
+   
+      <Route exact path="/section/:page/:name" component={Bike}/>
+  
       <Route exact path="/section/:page" component={RenderPage}/>
       <Footer/>
       </div>

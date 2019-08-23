@@ -1,12 +1,55 @@
-.Bike{
-    height: 100vh;
+.bike{
+    height: 100%;
     width: 100%;
-
     font-size: 2.6rem;
+    padding: 2rem 6rem;
 
-    img{
-        width: 40rem;
-        height: 40rem;
-        margin: 2rem;
+    &-details{
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-info{
+            width: 100%;
+
+            .buttons{
+                display:flex;
+                justify-content: flex-end;
+                padding: 1rem;
+            }
+            
+            .name{
+                font-weight: 500;
+                
+            }
+
+            .main{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 2rem;
+
+                .part{
+                    font-size: 1.4rem;
+                    align-self: flex-end;
+                }
+
+                .price{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+    &-description{
+        width:60%;
+        padding: 6rem;
+        font-size:1.4rem;
+
+        li{
+            margin:3rem 0;
+        }
     }
 }
