@@ -34,7 +34,7 @@ const TRAIL_DATA =
             {
                 id: cuid(),
                 name: 'StumpJumper Pro 29',
-                price: '6,300.00',
+                price: '6300',
                 partNumber: 'No.94159-0001',
                 quantity:0,
                 imageUrl: [stump1,stump2,stump3,stump4]
@@ -45,7 +45,7 @@ const TRAIL_DATA =
              {
                 id: cuid(),
                 name: 'StumpJumper Expert 27.5',
-                price: '5,000.00',
+                price: '5000',
                 partNumber: 'No.94159-0003',
                 quantity:0,
                 imageUrl: [expert1,expert2,expert3]
@@ -53,7 +53,7 @@ const TRAIL_DATA =
              {
                 id: cuid(),
                 name: 'Fuse Expert 29',
-                price: '2,100.00',
+                price: '2100',
                 partNumber: 'No.94159-0004',
                 quantity:0,
                 imageUrl: [fuse1,fuse2,fuse3
@@ -65,7 +65,7 @@ const TRAIL_DATA =
              {
                 id: cuid(),
                 name: 'Fuse Expert 27.5',
-                price: '2,000.00',
+                price: '2000',
                 partNumber: 'No.94159-0005',
                 quantity:0,
                 imageUrl: [bic1,demo2,demo3
@@ -76,7 +76,7 @@ const TRAIL_DATA =
             {
                 id: cuid(),
                 name: 'StumpJumper Expert 29',
-                price: '5,000.00',
+                price: '5000',
                 partNumber: 'No.94159-0002',
                 quantity:0,
                 imageUrl: [stump2,stumpE2,stumpE3,stumpE4]

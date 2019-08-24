@@ -1,7 +1,7 @@
 import TRAIL_DATA from '../../Assets/data/TrailData';
 import SWORKS_DATA from '../../Assets/data/SWorksData';
 import DOWNHILL_DATA from '../../Assets/data/DownHillData';
-import {GET_BIKE, GET_BIKES, ADD_BIKE, DECREASE} from './bikesActions';
+import {GET_BIKE, GET_BIKES, ADD_BIKE, DECREASE,REMOVE} from './bikesActions';
 import {addItem,removeItem} from './helperFunctions';
 
 const initialState = {
@@ -9,6 +9,7 @@ const initialState = {
   bike: 0,
   bikes: [],
   cart: [],
+  price:0
 };
 
 const bikesReducer = (state = initialState, action) => {
@@ -33,12 +34,20 @@ const bikesReducer = (state = initialState, action) => {
       return {
         ...state,
         cart: addItem (state.cart, action.payload),
+        price:state.cart.reduce((acc,it)=>{return acc=acc+it.quantity*it.price},0)
       };
     case DECREASE:
       return {
         ...state,
-        cart:removeItem(state.cart,action.payload)
+        cart:removeItem(state.cart,action.payload),
+        price:state.cart.reduce((acc,it)=>{return acc=acc+it.quantity*it.price})
       };
+    case REMOVE:
+        return {
+          ...state,
+          cart:state.cart.filter(item=>item.id !== action.payload.id),
+          price:state.cart.reduce((acc,it)=>{return acc=acc+it.quantity*it.price})
+        };
     default:
       return state;
   }

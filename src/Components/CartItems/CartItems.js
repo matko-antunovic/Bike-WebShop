@@ -1,10 +1,14 @@
 import React from 'react'
 import "./CartItems.scss"
 import {connect} from "react-redux"
-import {addBikeToCart,decreaseQ} from "../../Redux/bikes/bikesActions";
+import {addBikeToCart,decreaseQ,removeItem} from "../../Redux/bikes/bikesActions";
+import Button from "../Reusable/Buttton/Button"
 
-const CartItems = ({item,addBikeToCart,decreaseQ}) => {
-    console.log(item)
+const CartItems = ({item,addBikeToCart,decreaseQ,removeItem,price}) => {
+
+    let amount=0;
+   
+    console.log("price", price)
     return (
         <div className="cart-items">
 
@@ -20,11 +24,12 @@ const CartItems = ({item,addBikeToCart,decreaseQ}) => {
                     <div className="quantity-container">
                         Quantity:  <span onClick={()=>decreaseQ(item)} className="minus"> - </span> <span className="quantity-num">{item.quantity}</span>  <span onClick={()=>addBikeToCart(item)} className="plus"> + </span>
                     </div>
+                    <span  onClick={()=>removeItem(item)}>
+                   <Button text="Remove Item" size="1.3rem" bck="#d32e2e" color="#fff" padding=".5rem"/></span>
                     </div>
-
                 </div>: null}
             </div> 
-            
+           
         </div>
     )
 }
@@ -35,9 +40,11 @@ const mapDispatchToProps=dispatch=>({
       },
       decreaseQ:(item)=>{
         dispatch(decreaseQ(item))
+      },
+      removeItem:(item)=>{
+        dispatch(removeItem(item))
       }
 })
-
 
 
 export default connect(null,mapDispatchToProps)(CartItems)

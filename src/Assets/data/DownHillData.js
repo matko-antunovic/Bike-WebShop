@@ -26,7 +26,7 @@ const DOWNHILL_DATA =
            {
                 id: cuid(),
                 name: 'Demo Racer 29',
-                price: '6,500.00',
+                price: '6500',
                 partNumber: 'No.94159-0006',
                 quantity:0,
                 imageUrl: [racer1,racer2,racer3,racer4]
@@ -35,7 +35,7 @@ const DOWNHILL_DATA =
              {
                 id: cuid(),
                 name: 'Demo Expert 29',
-                price: '6,300.00',
+                price: '6300',
                 partNumber: 'No.94159-0007',
                 quantity:0,
                 imageUrl: [expert1,expert2,expert3,expert4]
@@ -44,7 +44,7 @@ const DOWNHILL_DATA =
              {
                 id:cuid(),
                 name: 'Demo Alloy 27.5',
-                price: '3,400.00',
+                price: '3400',
                 partNumber: 'No.94159-0008',
                 quantity:0,
                 imageUrl: [bic1 ,bic2,bic3]

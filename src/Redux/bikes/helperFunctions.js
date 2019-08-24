@@ -1,5 +1,18 @@
+import {createSelector} from "reselect";
+const selectCart=state=>state.bikes.cart;
+
+export const selectCartItems=createSelector(
+    [selectCart],
+    (cart)=>cart
+)
+
+export const selectCartItemsPrice=createSelector(
+    [selectCart],
+    (cart)=>cart.reduce((acc,cartItem)=>{return acc=acc +cartItem.quantity*cartItem.price},0)
+)
+
 export const addItem=(cart,item)=>{
-    console.log(item)
+
     const exisitingItem=cart.find(elem=>elem.id===item.id);
 
     if(exisitingItem){
@@ -22,3 +35,4 @@ export const removeItem=(cart,item)=>{
         {...itemToFind, quantity:itemToFind.quantity - 1} : itemToFind )
 
 }
+

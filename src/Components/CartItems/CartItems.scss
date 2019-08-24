@@ -4,11 +4,19 @@
 
     display: flex;
     justify-content: center;
+    position: relative;
 
+    .price{
+        position: absolute;
+        top:30%;
+        right: 5%;
+        font-size: 2rem;
+    }
 
     .item-container{
 
         padding: .5rem;
+        
 
         .cart-item{
             font-size: 2rem;

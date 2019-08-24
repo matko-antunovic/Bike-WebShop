@@ -3,6 +3,7 @@ export const GET_BIKE="GET_BIKE";
 export const GET_BIKES="GET_BIKES";
 export const ADD_BIKE="ADD_BIKE";
 export const DECREASE="DECREASE"
+export const REMOVE="REMOVE"
 
 export const getBike=(name)=>{
     return{
@@ -28,6 +29,13 @@ export const addBikeToCart=(item)=>{
 export const decreaseQ=(item)=>{
     return{
         type:DECREASE,
+        payload:item
+    }
+}
+
+export const removeItem=(item)=>{
+    return{
+        type:REMOVE,
         payload:item
     }
 }

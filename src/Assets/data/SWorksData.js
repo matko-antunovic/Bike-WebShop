@@ -30,7 +30,7 @@ const SWORKS_DATA =
            {
                id: cuid(),
                name: 'S-Works Demo 8',
-               price: '10,400.00',
+               price: '10400',
                partNumber: 'No.94159-0009',
                quantity:0,
                imageUrl: [demo1,demo2,demo3]
@@ -39,7 +39,7 @@ const SWORKS_DATA =
             {
                id: cuid(),
                name: 'S-Works Epic EVO',
-               price: '9,500.00',
+               price: '9500',
                partNumber: 'No.94159-0010',
                quantity:0,
                imageUrl:[evo1,evo2,evo3]
@@ -48,7 +48,7 @@ const SWORKS_DATA =
             {
                id: cuid(),
                name: 'S-Works StumpJumper 29',
-               price: '9,520.00',
+               price: '9520',
                partNumber: 'No.94159-0011',
                quantity:0,
               imageUrl: [stunt1,stunt2,stunt3]
@@ -57,7 +57,7 @@ const SWORKS_DATA =
             {
                id: cuid(),
                name: 'S-Works StumpJumper 27.5',
-               price: '9,520.00',
+               price: '9520',
                partNumber: 'No.94159-0012',
                quantity:0,
                imageUrl:[stump1,stump2,stump3]
@@ -66,7 +66,7 @@ const SWORKS_DATA =
             {
                id: cuid(),
                name: 'S-Works Demo 8 Frame',
-               price: '4,000.00',
+               price: '4000',
                partNumber: 'No.94159-0013',
                quantity:0,
                imageUrl: [evo5,evo3]
