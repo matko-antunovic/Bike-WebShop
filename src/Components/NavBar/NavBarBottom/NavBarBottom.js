@@ -23,7 +23,7 @@ const NavBarBottom = ({history,items}) => {
                 {/* <div className="search-icon"></div> */}
                 <div onClick={()=>{history.push("/cart")}} className="cart-icon">
                 </div>
-                {items.length>0 ? <span onClick={()=>{history.push("/cart")}}>{items.length}</span> : null}
+                {items.length>0 ? <span onClick={()=>{history.push("/cart")}}>PROCEED TO CHECKOUT</span> : null}
             </div>
 
 

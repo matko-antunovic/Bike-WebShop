@@ -5,7 +5,8 @@ import CartItems from "../../Components/CartItems/CartItems"
 import {connect} from "react-redux"
 
 const ShoppingCart = ({cart}) => {
-    const cartItem=cart.map(item=> <CartItems key={item.name} item={item}/>)
+    console.log("CART" ,cart)
+    const cartItem=cart.map(item=> <CartItems key={item.id} item={item}/>)
     return (
         <div className="container-cart">
             {cart.length>0 ? cartItem : <CartEmpty/>}            

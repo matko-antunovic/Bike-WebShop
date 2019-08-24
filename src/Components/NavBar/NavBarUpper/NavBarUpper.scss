@@ -12,19 +12,19 @@
   }
 
   &-shipping{
-    animation: pulse 2.5s infinite;
+  //   animation: pulse 2.5s infinite;
   
-  @keyframes pulse {
-    0% {
-      color: #fff;
-    }
-    50% {
-      color: #e45454;
-    }
-    100% {
-      color: #fff;
-    }
-  }
+  // @keyframes pulse {
+  //   0% {
+  //     color: #fff;
+  //   }
+  //   50% {
+  //     color: #e45454;
+  //   }
+  //   100% {
+  //     color: #fff;
+  //   }
+  // }
   }
 
   &-main {

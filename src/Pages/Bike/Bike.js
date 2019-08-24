@@ -21,7 +21,7 @@ class Bike extends Component {
         <div className="bike-details-info">
 
         <div className="buttons">
-          <span onClick={()=>this.props.addBikeToCart()}>
+          <span onClick={()=>this.props.addBikeToCart(bike)}>
           <Button text="ADD TO CART" color="#fff" bck="#d32e2e" width="15rem" size="1.7rem" padding="1.3rem" margin=".5rem" /> </span>
           <span onClick={()=>{this.props.history.push("/retailer")}}>
         <Button  text="FIND NEARBY" color="black" bck="transparent" border="1px solid" width="15rem" size="1.7rem" margin=".5rem" padding="1.3rem" /></span>
@@ -60,8 +60,8 @@ const mapDispatchToProps = dispatch => ({
   // addBikeToCart:nameToAdd=>{
   //   dispatch(addBikeToCart(nameToAdd))
   // }
-  addBikeToCart:()=>{
-    dispatch(addBikeToCart())
+  addBikeToCart:(bike)=>{
+    dispatch(addBikeToCart(bike))
   }
 });
 

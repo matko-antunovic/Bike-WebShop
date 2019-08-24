@@ -11,8 +11,8 @@
         padding: .5rem;
 
         .cart-item{
-            font-size: 1.8rem;
-            width: 65rem;
+            font-size: 2rem;
+            width: 75rem;
             height: 20rem;
             background-color: rgb(245, 245, 245);
             padding: 1rem;
@@ -20,9 +20,9 @@
             display: flex;
 
             &__img{
-                width: 30rem;
+                width: 40rem;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
 
             &__details{
@@ -33,6 +33,30 @@
                 justify-content: space-around;
                 padding-left: 2rem;
                 font-weight: 500;
+
+                .quantity-container{
+                    
+                    .minus{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    .plus{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    .quantity-num{
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+
+                    span{
+                        margin: 0 .8rem;
+                    }
+                }
             }
         }
 
