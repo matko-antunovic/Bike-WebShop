@@ -99,3 +99,31 @@
 
     }
 }
+
+@media screen and (max-width: 1150px){
+
+    .NavBarB{
+        &-links{
+            font-size: 1.1rem;
+
+            .NavSize{
+                padding: 0 1rem;
+                min-width: 8rem;
+            }
+        }
+      
+    }
+   
+  
+  }
+
+  @media screen and (max-width: 950px){
+
+    .NavBarB{
+        &-main{
+      padding: 0 1rem;
+    }
+   
+  
+  }
+}

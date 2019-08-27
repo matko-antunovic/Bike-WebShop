@@ -6,9 +6,6 @@ import Button from "../Reusable/Buttton/Button"
 
 const CartItems = ({item,addBikeToCart,decreaseQ,removeItem,price}) => {
 
-    let amount=0;
-   
-    console.log("price", price)
     return (
         <div className="cart-items">
 

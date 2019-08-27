@@ -14,9 +14,10 @@ const Footer = ({history}) => {
         <button type='submit' className='Footer-Form__Submit'>JOIN</button>
         </form>
             </div>
-
+            <div className="duo">
             <p>By submitting your email address you agree to the</p>
             <span>Terms & Conditions</span>
+            </div>
         </div>
 
         <div className="middle">

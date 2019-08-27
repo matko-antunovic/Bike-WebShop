@@ -11,22 +11,6 @@
     
   }
 
-  &-shipping{
-  //   animation: pulse 2.5s infinite;
-  
-  // @keyframes pulse {
-  //   0% {
-  //     color: #fff;
-  //   }
-  //   50% {
-  //     color: #e45454;
-  //   }
-  //   100% {
-  //     color: #fff;
-  //   }
-  // }
-  }
-
   &-main {
     display: flex;
     justify-content: space-between;
@@ -82,4 +66,27 @@
       color: #e45454;
     }
   }
+}
+
+
+@media screen and (max-width: 1150px){
+
+  .NavBar{
+    &-container {
+    font-size: 1.1rem;
+    }
+  }
+ 
+
+}
+
+
+@media screen and (max-width: 950px){
+
+  .NavBar{
+      &-main{
+    padding: 0 1rem;
+    margin: 0;
+  }
+}
 }

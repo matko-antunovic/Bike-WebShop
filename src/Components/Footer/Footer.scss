@@ -137,3 +137,104 @@
     }
 
 }
+
+@media screen and (max-width: 1000px){
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 3rem;
+ 
+        .left-side{
+            min-width: 100%;
+            order: 1;
+
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .duo{
+                margin: 1rem;
+                flex-grow: 1;
+
+                display: flex;
+                flex-direction: column;
+               
+                align-items: center;
+                justify-content: space-around;
+
+                span{
+                    margin: 0;
+                }
+                p{
+                    text-align: center;
+                }
+            }            
+        }
+        .middle{
+            margin-top: 3rem;
+            order: 3;
+            width: 100%;
+        }
+
+        .right-side{
+            margin-top: 2rem;
+            flex-direction: row;
+            justify-content: space-between;
+            order: 2;
+
+            .logos{
+                flex-grow: 1;
+
+                .sizeup{
+                    transition: none;
+                   &:hover{
+                   height: 2rem;
+                   width: 2rem;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .Footer{
+        padding: .5rem;
+
+    &-Form__Input{
+        width: 100%;
+        text-align: center;
+    }
+    .left-side{
+
+        .input{
+            width: 90%;
+        }
+
+        min-width: 100%;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction:column;    
+        justify-content: flex-start;    
+    }
+
+    .right-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .logos{
+            width: 100%;
+        }
+    }
+
+    .middle{
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+}
+}

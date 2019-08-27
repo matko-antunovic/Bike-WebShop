@@ -38,3 +38,31 @@
 
     }
 }
+@media screen and (max-width: 950px){
+    .HomeBreaker{
+
+        .titles{
+            .main-title{
+                font-size: 10rem;
+
+}
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .HomeBreaker{
+
+        .titles{
+            margin-left: 3rem;
+            .sub-title{
+                font-size: 1.3rem;
+
+            }
+            .main-title{
+                font-size: 5rem;
+                line-height:5rem;
+}
+        }
+    }
+}

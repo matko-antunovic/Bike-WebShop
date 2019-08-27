@@ -8,12 +8,11 @@ import {createStructuredSelector} from "reselect"
 
 
 const ShoppingCart = ({cart,total}) => {
-    console.log("CART" ,cart)
     const cartItem=cart.map(item=> <CartItems key={item.id} item={item}/>)
     return (
         <div className="container-cart">
-            {cart.length>0 ? <div className="cartItem">{cartItem} <p className="paynow">PAY NOW</p></div> : <CartEmpty/>}       
-            {total>0 ? <div className="priceT">Total price : <span className="total-price">{total} $</span></div> : null}     
+            {cart.length>0 ? <div className="cartItem">{cartItem} {total>0 ? <div className="priceT">Total price : <span className="total-price">{total} $</span></div> : null}    <p className="paynow">PAY NOW</p></div> : <CartEmpty/>}       
+              
         </div>
     )
 }

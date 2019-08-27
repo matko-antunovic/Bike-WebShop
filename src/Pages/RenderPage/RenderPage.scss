@@ -10,3 +10,21 @@
         object-fit: cover;
     }
 }
+
+
+@media screen and (max-width: 1200px){
+    .trail{
+    font-size: .9rem;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .trail{
+        font-size: .7rem;
+        .image-hero{
+            height: 20rem;
+        }
+    }
+
+}

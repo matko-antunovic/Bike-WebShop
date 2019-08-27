@@ -20,3 +20,28 @@
         align-items: center;
     }
 }
+
+
+@media screen and (max-width: 950px){
+
+    .home-video{
+        padding: 6rem;
+        height: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .home-video{
+        height: 50vh;
+        padding: 2rem;
+
+        .video-wrapper{
+            height: 100%;
+            padding-bottom: 2rem;
+        }
+    }
+   
+   
+}
+

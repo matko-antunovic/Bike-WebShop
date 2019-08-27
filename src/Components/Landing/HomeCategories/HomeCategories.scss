@@ -64,3 +64,46 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px){
+    .HomeCategories{
+
+        .categories{
+           .wrapper{
+               span{
+                text-align: center;
+                min-width: 90%;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .HomeCategories{
+        padding: 3rem;
+
+        .categories{
+            height: 35vh;
+            .wrapper{
+                span{font-size: 2rem;
+                }
+            }
+            }
+        }
+    }
+
+@media screen and (max-width: 650px){
+        .HomeCategories{
+            padding: 3rem;
+    
+            .categories{
+                height: 35vh;
+                .wrapper{
+                    span{font-size: 1.2rem;
+                    }
+                }
+                }
+            }
+        }
+    

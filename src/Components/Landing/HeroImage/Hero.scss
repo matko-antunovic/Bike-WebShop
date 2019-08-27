@@ -48,3 +48,53 @@
 
 
     }
+
+@media screen and (max-width: 850px){
+    .Hero{
+        padding-left: 3rem;
+        &__text{
+            grid-column: 1/9;
+            grid-row: 3/span 5;
+            
+            &--title{
+                font-size: 4.5rem;
+                
+            }
+            &--subtitle{
+                font-size: 2rem;
+                margin-top: 15rem;
+            }
+        }
+
+    }
+
+    
+}
+
+@media screen and (max-width: 625px){
+    .Hero{
+        
+        &__text{
+           
+
+            &--title{
+                font-size: 3rem;
+                
+            }
+            &--subtitle{
+                font-size: 1.4rem;
+                margin-top: 7rem;
+                font-weight: 700;
+            }
+        }
+
+        .CTA{
+            background-color: rgba(black,.6);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            width: 20rem;
+        }
+    }
+
+    
+}

@@ -22,7 +22,7 @@
         }
 
         .price{
-            margin-top: 1rem;
+            margin-bottom: 2rem;
             font-size: 1.7rem;
             font-weight: 500;
         }
@@ -39,3 +39,33 @@
     }
 }
 
+
+@media screen and (max-width: 800px){
+    .cards{
+        .card{
+            width: 40%;
+            .price{
+                margin-top: 0;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .cards{
+        .card{
+            height: 100%;
+            width: 100%;
+            .price{
+                margin-top: 0;
+                font-size: 1.5rem;
+            }
+
+      
+        }
+        
+    }
+}
