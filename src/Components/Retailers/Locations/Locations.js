@@ -6,10 +6,6 @@ const Locations = ({number,name,address1,
     return (
         <div className="location">
 
-            <div className="location-column__1">
-                {number}
-
-            </div>
 
             <div className="location-column__2">
             <div className="details">

@@ -25,5 +25,61 @@
     .locations-main{
         width: 100%;
         padding: 4rem 6rem;
+
+        .location:nth-child(odd) {
+            background: rgb(250, 246, 246);
+          }
+       
     }
+}
+
+@media screen and (max-width:1050px) {
+
+    .retailer{
+       
+        
+    .search-retailer-main{
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+
+        &-map{
+            height: 50vh;
+        }
+
+        .locations-main{
+            width: 100%;
+            padding: 2rem 3rem;
+
+            .location{
+                &-column{
+                    &__1{
+                        margin-right:0;
+                    }
+                    &__2{
+                        margin-right:0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:650px) {
+
+    .retailer{
+
+
+    .search-retailer-main{
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+
+        &-map{
+            height: 50vh;
+        }
+    }
+
 }

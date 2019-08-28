@@ -30,7 +30,7 @@ class SearchRetailer extends Component {
                             </div>
                         </div> 
 
-                        <Button width="30rem" bck="rgb(211, 46, 46)" color="#fff" size="1.5rem" padding="1.5rem" text="SEARCH" />
+                        <Button width="28rem" bck="rgb(211, 46, 46)" color="#fff" size="1.5rem" padding="1.5rem" text="SEARCH" />
                         
                     </div>
 

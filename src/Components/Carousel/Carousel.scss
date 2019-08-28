@@ -1,16 +1,14 @@
-.carousel{
+.carousel {
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-    
-    &-container{
+
+    &-container {
         display: flex;
         flex-direction: column;
-        
-        margin-top: 2rem;
         font-size: 2.5rem;
         width: 80%;
         justify-content: center;
@@ -18,23 +16,25 @@
         color: black;
         position: relative;
 
-        .thumb-arrows{
+        .thumb-arrows {
             position: absolute;
             width: 100%;
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
         }
 
-        .left{
+        .left {
             position: absolute;
-            left:-5%;
+            left: -5%;
         }
-        .right{
+
+        .right {
             position: absolute;
-            right:-5%;
+            right: -5%;
         }
-        span{
+
+        span {
             font-size: 8rem;
             font-weight: 400;
             cursor: pointer;
@@ -42,9 +42,87 @@
         }
     }
 
-    img{
+    img {
         width: 100%;
         height: 60vh;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .carousel {
+        height: 45vh;
+
+        img {
+            object-fit: cover;
+        }
+
+        &-container {
+            padding: 0 2rem;
+
+            img {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+    .carousel {
+        height: 35vh;
+        padding: 0;
+
+        img {
+            object-fit: cover;
+        }
+
+        &-container {
+            padding: 0 2rem;
+
+            .thumb-arrows {
+                span {
+                    font-size: 6rem;
+                    color: #d32e2e;
+                }
+            }
+
+            img {
+                width: 150%;
+                height: 30vh;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel {
+        padding: 0;
+        height: 30vh;
+
+        img {
+            object-fit: cover;
+        }
+
+        &-container {
+            padding: 0 2rem;
+
+            .thumb-arrows {
+                span {
+                    font-size: 5rem;
+                    color: #d32e2e;
+                }
+            }
+
+
+            img {
+                width: 150%;
+                height: 22vh;
+            }
+        }
+
     }
 }

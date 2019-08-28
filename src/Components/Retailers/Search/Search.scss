@@ -20,7 +20,7 @@
                 &-input {
 
                     display: flex;
-                    
+
 
                     &-box {
                         padding: 1rem;
@@ -35,13 +35,13 @@
                     margin-left: 2rem;
                     height: 4rem;
                     display: flex;
-                    
+
                     justify-content: flex-start;
                     font-size: 1.8rem;
                     font-weight: 500;
                 }
 
-                &-miles{
+                &-miles {
                     align-self: center;
                     margin-left: 1.5rem;
                 }
@@ -94,4 +94,108 @@
 
 
     }
+}
+
+@media screen and (max-width:1050px) {
+    .search-retailer {
+
+     
+
+        .search-form {
+            display: flex;
+            flex-direction: column;
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 5rem;
+
+                .button{
+                    margin: 0 auto;
+                    
+                }
+
+                h1 {
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+
+                .search {
+
+                    &-input {
+                        justify-content: center;
+
+                        
+                    }
+                }
+
+            }
+            &-right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .search-retailer {
+     
+        .search-form {
+            display: flex;
+            flex-direction: column;
+
+            &-container{
+                margin-left: 1.5rem;
+            }
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 5rem;
+
+                .search-input {
+                    input{
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .button{
+                  width: 100%;
+                }
+
+                h1 {
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+
+                .search {
+
+                    &-input {
+                        justify-content: center;
+
+                        
+                    }
+                }
+
+            }
+
+          
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .search-retailer {
+     
+        .search-form {
+            &-right{
+
+            }
+            &-container{
+                flex-direction: column;
+            }
+        }}
 }

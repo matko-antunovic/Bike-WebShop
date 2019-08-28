@@ -57,9 +57,6 @@ const mapDispatchToProps = dispatch => ({
   getBike: name => {
     dispatch(getBike(name));
   },
-  // addBikeToCart:nameToAdd=>{
-  //   dispatch(addBikeToCart(nameToAdd))
-  // }
   addBikeToCart:(bike)=>{
     dispatch(addBikeToCart(bike))
   }

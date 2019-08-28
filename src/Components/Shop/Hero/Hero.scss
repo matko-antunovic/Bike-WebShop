@@ -25,3 +25,30 @@
         margin-bottom: 3rem;
     }
 }
+
+
+@media screen and (max-width:1200px) {
+    .hero{
+        padding: 1rem 0;
+        height: 48vh;
+        &-img {
+            height: 37vh;
+        }
+        
+        span{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .hero{
+        padding: 1rem 0;
+        height: 46vh;
+        &-img {
+            height: 37vh;
+        }
+    }
+
+
+}
