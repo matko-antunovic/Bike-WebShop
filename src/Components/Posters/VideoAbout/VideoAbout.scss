@@ -7,4 +7,18 @@
         font-weight: 500;
         margin-bottom: 5rem;
     }
+
+    &__video{
+        height: 100%;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .video-about{
+        height: 60vh;
+        &__video{
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }}

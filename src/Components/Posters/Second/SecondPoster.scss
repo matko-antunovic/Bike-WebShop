@@ -1,20 +1,51 @@
-.second-container{
-    background: center / cover no-repeat url("../../../Assets/Images/About/AboutSection3.jpg");
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    margin-top: 15rem;
-    
-    .title{
-        position: absolute;
-        top:-10%;
+.second-poster{
+    .title {
         color: black;
-       text-shadow: 1px 1px 0 #7A7A7A;
-
-        span{
+        text-shadow: 1px 1px 0 #7A7A7A;
+  
+        width: 100%;
+        span {
             color: #d32e2e;
         }
     }
+    .second-container {
+        background: center / cover no-repeat url("../../../Assets/Images/About/AboutSection3.jpg");
+        width: 100%;
+        height: 100vh;
+    }
+}
+    
+
+@media screen and (max-width: 1050px) {
+    .second-poster{
+    .second-container {
+        height: 60vh;
+    }
+    .title {
+        margin-left: 3rem;
+        font-size: 2rem;
+    }}
+}
+
+@media screen and (max-width: 850px) {
+    .second-poster{
+    .second-container {
+        height: 55vh;
+    }
+    .title {
+        margin-left: 2.7rem;
+        font-size: 2rem;
+    }}
+}
 
 
+@media screen and (max-width: 550px) {
+    .second-poster{
+    .second-container {
+        height: 35vh;
+    }
+    .title {
+        padding:0 .8rem 0 .8rem;
+        font-size: 1.2rem;
+    }}
 }

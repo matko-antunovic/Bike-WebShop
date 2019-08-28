@@ -2,6 +2,10 @@
     font-size: 2rem;
     color:#fff;
     padding:3rem 6rem;
+}
 
-  
+@media screen and (max-width: 1050px) {
+    .story{
+        padding: 0;
+    }
 }

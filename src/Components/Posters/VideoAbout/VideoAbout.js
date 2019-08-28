@@ -5,6 +5,7 @@ const VideoAbout = () => {
     return (
         <div className="video-about">
             <h2>WE BELIEVE CYCLING CHANGES LIVES</h2>
+            <div className="video-about__video">
          <iframe 
                 title="about"
                 width="100%" 
@@ -13,6 +14,7 @@ const VideoAbout = () => {
                 frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>
             </iframe>
+            </div>
         </div>
     )
 }
