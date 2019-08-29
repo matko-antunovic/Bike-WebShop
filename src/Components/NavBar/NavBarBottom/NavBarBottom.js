@@ -3,15 +3,19 @@ import "./NavBarBottom.scss"
 import {withRouter} from "react-router-dom"
 import {connect} from "react-redux"
 
-const NavBarBottom = ({history,items}) => {
+const NavBarBottom = ({history,items,handleClick, drawer}) => {
    
     return (
         <div className="NavBarB-container">
 
             <div className="NavBarB-main">
             <div onClick={()=>{history.push("")}} className="NavBarB-logo"> </div>
-
-            <div className="NavBarB-links">
+            <div   onClick={handleClick}  className={`bar-container ${drawer? "drawer" : null}`}>
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div></div>
+            <div className="NavBarB-links">  
+            
                 <div  onClick={()=>{history.push("/bikes")}} className="NavBarB-links__bikes  NavSize">Bikes</div>
                 <div onClick={()=>{history.push("/section/trail")}} className="NavBarB-links__trail NavSize">Trail</div>
                 <div onClick={()=>{history.push("/section/downhill")}} className="NavBarB-links__downhill NavSize">Downhill</div>

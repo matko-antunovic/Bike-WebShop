@@ -13,8 +13,7 @@ const CartItems = ({item,addBikeToCart,decreaseQ,removeItem,price}) => {
             <div className="item-container">
             {item ? 
                 <div className="cart-item">
-                    <img className="cart-item__img" src={item.imageUrl[0]} alt="smh" />
-
+                    <img className="cart-item__img"  src={item.imageUrl[0]} alt="smh" />
                     <div className="cart-item__details">
                     <p>{item.name}</p>
                     <p>{item.price} $ </p>

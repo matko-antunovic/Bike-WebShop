@@ -6,3 +6,9 @@
 .margin-wrapper{
     margin-top: 9.5rem;
 }
+
+@media screen and (max-width:750px){
+    .margin-wrapper{
+        margin-top: 8.5rem;
+    }
+}

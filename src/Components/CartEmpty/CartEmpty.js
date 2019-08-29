@@ -25,7 +25,7 @@ const CartEmpty = () => {
             <div className="cart-bottom">
             <div className="bottom-L">
                 <p className="bottom-p titleL">Contact Us</p>
-                <p className="bottom-p">8:00am - 6:00pm MST, Monday-Friday</p>
+                <p className="bottom-p">8:00am - 6:00pm, Monday-Friday</p>
                 <p className="bottom-p">877-808-8154</p>
                 <p className="bottom-p email">ridercare@specialized.com</p>
             </div>

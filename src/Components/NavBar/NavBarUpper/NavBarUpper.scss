@@ -90,3 +90,26 @@
   }
 }
 }
+
+@media screen and (max-width: 750px){
+
+  .NavBar{
+    &-container{
+      height:3rem;
+    }
+    &-shipping{
+      font-size:1rem;
+  
+    }
+      &-main{
+    padding: 0 1rem;
+    margin: 0;
+  }
+  &-location__icon{
+    display:none;
+  }
+  &-lang{
+    display:none;
+  }
+}
+}

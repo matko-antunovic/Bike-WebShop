@@ -1,0 +1,32 @@
+.drawer{
+ display: none;
+ text-decoration: none;
+}   
+.open{
+display: flex;
+flex-direction: column;
+padding-top: 2rem;
+align-items: flex-start;
+line-height: 5.3rem;
+z-index: 11;
+position: fixed;
+background-color: #ed1c24;
+width: 20rem;
+height: 100vh;
+color: white;
+font-size: 1.6rem;
+font-weight: 700;
+
+
+
+span{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    padding-left: 2rem;
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+}
+}

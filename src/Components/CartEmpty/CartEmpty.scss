@@ -108,7 +108,7 @@
 
                     display: flex;
                     height: 5rem;
-                    width: 40rem;
+                    width: 30rem;
 
                     div{
                         margin: .3rem;
@@ -147,4 +147,94 @@
 
 
 
+}
+@media screen and (max-width: 1000px){
+    .cart{
+        &-bottom{
+            margin:3rem;
+            .bottom{
+                &-L{
+                    width:25rem;
+                }
+                &-R{
+                    .card{
+                        width: 25rem;
+            }
+        }
+            }}}
+           
+}
+
+
+@media screen and (max-width: 850px){
+    .cart{
+
+        &-top{
+            .top-title{
+                width:100%;
+                text-align:center;
+            }
+            .top-link{
+                display:none;
+            }
+        }
+        
+        &-bottom{
+            font-size:1.3rem;
+            width:100%;
+            margin:0;
+            justify-content:space-between;
+
+
+            .bottom-L{
+                width:22rem;
+                margin-left:2rem;
+            }
+            .bottom-R{
+                width:20rem;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .cart{
+        height:60%;
+        &-middle{
+            .middle{
+                &-title{
+                    font-size:1.5rem;
+                }
+                &-txt{
+                    font-size:1.5rem;
+                }
+            }
+        }
+        &-top{
+            padding:3rem;
+          }
+        &-bottom{
+         display:flex;
+         flex-direction:column;
+         margin-left:3rem;
+        
+      
+
+         .bottom{
+           
+            
+             &-L{
+                width:100%; 
+                margin:0;
+             }
+             &-M{
+                width:100%; 
+            }
+            &-R{
+                width:100%; 
+            }
+         }
+
+        }
+    }
 }
