@@ -1,8 +1,7 @@
 import React from 'react'
 import NavBarUpper from "./NavBarUpper/NavBarUpper";
 import NavBarBottom from "./NavBarBottom/NavBarBottom";
-import Drawer from "./Drawer/Drawer"
-import "./NavBarUpper.scss"
+import "./NavBar.scss"
 
 export const NavBar=({handleClick,drawer})=>{
 

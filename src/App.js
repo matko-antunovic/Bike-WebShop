@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import './App.css';
 import Landing from "./Pages/Landing/Landing";
-import NavBarUpper from "./Components/NavBar/NavBarUpper";
-import Drawer from "./Components/NavBar/Drawer/Drawer";
+import NavBar from "./Components/NavBar/NavBar";
+import Drawer from "./Components/Drawer/Drawer";
 import Footer from "./Components/Footer/Footer"
 import Story from "./Pages/OurStory/Story";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart"
@@ -11,7 +11,7 @@ import Retailer from "./Pages/Retailer/Retailer"
 import Bikes from "./Pages/Bikes/Bikes"
 import Bike from "./Pages/Bike/Bike"
 import RenderPage from "./Pages/RenderPage/RenderPage"
-import BackDrop from "./Components/NavBar/Drawer/BackDrop"
+import BackDrop from "./Components/Drawer/BackDrop"
 import {Route} from "react-router-dom";
 
 class App extends Component{
@@ -29,7 +29,7 @@ this.setState({
     return (
     
       <div className="App">
-        <NavBarUpper drawer={this.state.drawer} handleClick={this.handleClick}/>
+        <NavBar drawer={this.state.drawer} handleClick={this.handleClick}/>
         <div className="margin-wrapper">
         <Drawer handleClick={this.handleClick} drawer={this.state.drawer}/>
         <BackDrop handleClick={this.handleClick} bck={this.state.drawer}/>

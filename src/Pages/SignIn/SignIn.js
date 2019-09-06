@@ -14,10 +14,10 @@ const SignIn = () => {
             you will need to reset your password to use it. Simply select 'Forgot Your Password?' below to do so.
           </p>
           <form>
-            <label for="email">EMAIL</label>
+            <label htmlFor="email">EMAIL</label>
             <input type="email" name="email" />
 
-            <label for="password">PASSWORD</label>
+            <label htmlFor="password">PASSWORD</label>
             <input type="password" name="password" />
 
             <p className="password-f">FORGOT YOUR PASSWORD?</p>
