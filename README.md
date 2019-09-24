@@ -8,3 +8,6 @@ About Project
 - Webshop allows users to shop bikes and view other brand-related information
 - Utilized CSS Grid and Flexbox for the application layout
 - State was managed using Redux and Redux-Reselect
+
+
+[LIVE DEMO](https://specialized.firebaseapp.com/)
